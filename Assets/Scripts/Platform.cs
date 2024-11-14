@@ -7,7 +7,7 @@ public class Platform : MonoBehaviour
 {
 
     private PlatformEffector2D   effector;
-    public float startWaiTime;
+    public float startWaitTime;
     private float waitedTime;
 
 
@@ -21,7 +21,7 @@ public class Platform : MonoBehaviour
     {
         if (Input.GetKeyUp(KeyCode.DownArrow))
         {
-            waitedTime = startWaiTime;
+            waitedTime = startWaitTime;
         }
 
         if (Input.GetKey("s"))
@@ -29,7 +29,7 @@ public class Platform : MonoBehaviour
             if (waitedTime <= 0)
             {
                 effector.rotationalOffset = 180f;
-                waitedTime = startWaiTime;
+                waitedTime = startWaitTime;
             }
             else
             {

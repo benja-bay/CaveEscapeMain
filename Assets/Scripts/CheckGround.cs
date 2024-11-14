@@ -11,6 +11,7 @@ public class CheckGRound : MonoBehaviour
         if (collision.CompareTag("Ground"))
         {
             isGrounded = true;
+            Debug.Log("isGrounded true");
         }
     }
     private void OnTriggerExit2D(Collider2D collision) 
@@ -18,6 +19,7 @@ public class CheckGRound : MonoBehaviour
         if (collision.CompareTag("Ground"))
         {
             isGrounded = false;
+            Debug.Log("isGrounded false");
         }
     }
 }

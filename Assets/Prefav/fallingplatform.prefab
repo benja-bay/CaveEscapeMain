@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &86150074852561360
+--- !u!1 &163882616367751117
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,41 +8,40 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4600857840128285309}
-  - component: {fileID: 6323390259093832073}
-  - component: {fileID: 7665340236016768087}
-  - component: {fileID: 2655211040573751556}
-  - component: {fileID: 8180228598277966746}
-  - component: {fileID: 2904580633563107486}
-  m_Layer: 0
-  m_Name: fallingplatform
+  - component: {fileID: 1898634704650667252}
+  - component: {fileID: 7766978126075935671}
+  - component: {fileID: 433743810877524642}
+  - component: {fileID: 1100678156879185711}
+  - component: {fileID: 1857751204677722977}
+  m_Layer: 6
+  m_Name: FallingPlatform
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4600857840128285309
+--- !u!4 &1898634704650667252
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 86150074852561360}
+  m_GameObject: {fileID: 163882616367751117}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.198483, y: -0.34319335, z: 0}
+  m_LocalPosition: {x: 3.26, y: -0.207, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &6323390259093832073
+--- !u!212 &7766978126075935671
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 86150074852561360}
+  m_GameObject: {fileID: 163882616367751117}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -88,14 +87,14 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!50 &7665340236016768087
+--- !u!50 &433743810877524642
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 86150074852561360}
+  m_GameObject: {fileID: 163882616367751117}
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
@@ -115,13 +114,13 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!61 &2655211040573751556
+--- !u!61 &1100678156879185711
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 86150074852561360}
+  m_GameObject: {fileID: 163882616367751117}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -160,38 +159,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.16, y: 0.08}
   m_EdgeRadius: 0
---- !u!114 &8180228598277966746
+--- !u!114 &1857751204677722977
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 86150074852561360}
+  m_GameObject: {fileID: 163882616367751117}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 80257b8588ccece4ca8339811aefa3c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tiempoEspera: 0.5
-  velocidadRotacion: 50
---- !u!95 &2904580633563107486
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 86150074852561360}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 5a58fa712f9295141bec746ff9cbf4e0, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
+  tiempoEspera: 1
+  tiempoDestruccion: 1.5
