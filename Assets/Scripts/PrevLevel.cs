@@ -10,6 +10,7 @@ public class PrevLevel : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex-1);
+            Debug.Log("lvl -1");
         }
     }
 }
