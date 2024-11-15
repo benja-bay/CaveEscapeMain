@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class FallingPlatform : MonoBehaviour
 {
+    //Obsolete due to a better implemented system
     public float tiempoEspera;
     public float tiempoDestruccion;
     public float velocidadRotacion;

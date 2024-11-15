@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CheckGRound : MonoBehaviour
 {
+    //Obsolete due to a better implemented system
     public static bool isGrounded;
     
     private void OnTriggerEnter2D(Collider2D collision) 
