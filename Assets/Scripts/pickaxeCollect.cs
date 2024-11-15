@@ -5,9 +5,11 @@ using UnityEngine;
 public class pickaxeCollect : MonoBehaviour
 {
     private GameObject rockFall;
+     private GameObject infoCamino;
     void Start()
     {
         rockFall = GameObject.Find("rockfall");
+        infoCamino = GameObject.Find("infoCamino");
     }
     void Update()
     {
@@ -22,6 +24,7 @@ public class pickaxeCollect : MonoBehaviour
             if (rockFall != null)
             {
                 rockFall.SetActive(!rockFall.activeSelf);
+                infoCamino.SetActive(!infoCamino.activeSelf);
                 Debug.Log("rock fall disabled");
             }
         }
