@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class PlayerMov : MonoBehaviour
 {
+   Rigidbody2D rb2D;
    //mov
    public float runSpeed=2;
    public float jumpSpeed=3;
    public float doubleJumpSpeed=2.5f;
    private bool canDoubleJump;
-   Rigidbody2D rb2D;
    public bool doubleJump = false;
    // better jump
    public bool betterJump = false;
@@ -21,6 +21,7 @@ public class PlayerMov : MonoBehaviour
    // check ground raycast
    [SerializeField] private LayerMask whatIsGround;
    private bool isGrounded;
+   
    void Start()
    {
       rb2D = GetComponent<Rigidbody2D>();
@@ -93,7 +94,6 @@ public class PlayerMov : MonoBehaviour
       float rayLength = 0.1f;
       Ray ray = new Ray(transform.position, Vector2.down);
       Debug.DrawRay(ray.origin, ray.direction * rayLength, Color.red);
-      Debug.Log(isGrounded);
       isGrounded = Physics2D.Raycast(ray.origin, ray.direction, rayLength, whatIsGround);
    }
 }
