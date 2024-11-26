@@ -165,10 +165,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 989a8379d47ae7b4fa1fe78fa5120315, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  puntosMovimiento:
-  - {fileID: 5158677903646737804}
-  - {fileID: 3555383375187527892}
-  velocidadMovimiento: 0.35
+  movementPoints: []
+  speedTime: 0
 --- !u!114 &8581619613926274141
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -213,7 +211,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.011403561, y: -0.04687953}
+  m_Offset: {x: -0.012365341, y: -0.04687953}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -224,7 +222,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.15790462, y: 0.264606}
+  m_Size: {x: 0.113658905, y: 0.264606}
   m_EdgeRadius: 0
 --- !u!95 &2019511644744174501
 Animator:
